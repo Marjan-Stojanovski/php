@@ -2,7 +2,7 @@
 require_once "header.php";
 ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <br>
     </div>
@@ -17,23 +17,23 @@ require_once "header.php";
     <div class="row">
         <div class="col-md-12">
             <form method="post" action="process.php">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">First Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="first_name">
+                <div class="input-group input-group-outline my-4 focused is-focused">
+                    <label class="form-label" for="first_name">First Name</label>
+                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" name="first_name">
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Last Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="last_name">
+                <div class="input-group input-group-outline my-4 focused is-focused">
+                    <label class="form-label" for="last_name">Last Name</label>
+                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="last_name">
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="email">
+                <div class="input-group input-group-outline my-4 focused is-focused">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="email">
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required name="password">
+                <div class="input-group input-group-outline my-4 focused is-focused">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="password">
                 </div>
-                <button type="submit" class="btn btn-primary green">Create User</button>
+                <button type="submit" class="btn btn-primary">Create User</button>
             </form>
 
         </div>
