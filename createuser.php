@@ -1,44 +1,48 @@
-<?php require_once "header.php"; ?>
+<?php
+require_once "header.php";
+?>
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1>Register form</h1>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h1>Create New User</h1>
+        </div>
+        <div class="col-md-2">
+            <a href="listproducts.php" class="btn btn-primary">List Available Users</a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form action="/process/register.php" method="post">
-                <div class="input-group input-group-outline my-3 focused is-focused">
-                    <label class="form-label">First Name</label>
-                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" name="first_name">
+            <form method="post" action="process.php">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="first_name">
                 </div>
-
-                <div class="input-group input-group-outline my-3 focused is-focused">
-                    <label  class="form-label" for="last_name">Last Name</label>
-                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)"  name="last_name">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="last_name">
                 </div>
-
-
-                <div class="input-group input-group-outline my-3 focused is-focused">
-                    <label for="dob"  class="form-label">DOB</label>
-                    <input type="date" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" name="dob">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="email">
                 </div>
-
-                <div class="input-group input-group-outline my-3 focused is-focused">
-                    <label for="exampleInputEmail1"  class="form-label">Email address</label>
-                    <input type="email" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)"  name="email">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required name="password">
                 </div>
-                <div class="input-group input-group-outline my-3 focused is-focused">
-                    <label for="exampleInputPassword1"  class="form-label">Password</label>
-                    <input type="password" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)"  name="password">
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary green">Create User</button>
             </form>
+
         </div>
     </div>
 </div>
 
-<?php require_once "footer.php"; ?>
 
+
+
+<?php
+require_once "footer.php";
+?>
