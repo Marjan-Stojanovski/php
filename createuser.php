@@ -26,6 +26,10 @@ require_once "header.php";
                     <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="last_name">
                 </div>
                 <div class="input-group input-group-outline my-4 focused is-focused">
+                    <label class="form-label" for="dob">Dob</label>
+                    <input type="date" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="dob">
+                </div>
+                <div class="input-group input-group-outline my-4 focused is-focused">
                     <label class="form-label" for="email">Email</label>
                     <input type="email" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="email">
                 </div>
