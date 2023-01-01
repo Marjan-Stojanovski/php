@@ -1,6 +1,6 @@
 <?php
-require_once "header.php";
-require_once "./config/db.php";
+
+require_once "./process/functions.php";
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB) or die('Connection error');
 
@@ -42,18 +42,13 @@ $data = [
     'dob' => $dob,
 ];
 
-var_dump($data);
-die();
+$product = insert($conn, $data, 'users');
 
-
-$query = mysqli_query($conn, "INSERT INTO users (first_name, last_name, email, password, dob) VALUES ('$first_name', '$last_name', '$email', '$password', '$dob')");
-
-if ($query) {
+if($product) {
     header('Location: /index.php');
 } else {
     header('Location: 404.php');
-};
-
+}
 
 
 

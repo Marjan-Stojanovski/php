@@ -11,12 +11,12 @@ require_once "header.php";
             <h1>Create New User</h1>
         </div>
         <div class="col-md-2">
-            <a href="listproducts.php" class="btn btn-primary">List Available Users</a>
+            <a href="/listusers.php" class="btn btn-primary">List Available Users</a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="process.php">
+            <form method="post" action="/createusers.php">
                 <div class="input-group input-group-outline my-4 focused is-focused">
                     <label class="form-label" for="first_name">First Name</label>
                     <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" name="first_name">

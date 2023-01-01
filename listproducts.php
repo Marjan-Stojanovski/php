@@ -12,7 +12,7 @@ while ($product = mysqli_fetch_assoc($query)) {
 };
 
 ?>
-<div class="container">
+<div class="container-fluid">
     <br>
     <div class="row">
         <div class="col-md-10">

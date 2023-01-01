@@ -16,7 +16,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="process.php">
+            <form method="post" action="createusers.php">
                 <div class="input-group input-group-outline my-4 focused is-focused">
                     <label class="form-label" for="product_name">Product Name</label>
                     <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="product_name">

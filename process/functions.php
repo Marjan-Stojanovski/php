@@ -1,0 +1,19 @@
+<?php
+
+require_once "./config/db.php";
+
+function insert($conn, $data, $table)
+{
+    $keys = [];
+    $values = [];
+    foreach ($data as $key => $value) {
+        $keys[] = $key;
+        $values[] = "'$value'";
+    }
+    $keys = implode(',', $keys);
+    $values = implode(',', $values);
+
+    $queryInsert = "INSERT INTO $table ($keys) VALUES ($values)";
+    $query = mysqli_query($conn, $queryInsert);
+    return $query;
+}
