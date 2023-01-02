@@ -75,7 +75,7 @@ $queryExecute = "UPDATE users SET $buildQuery WHERE id = '$id'";
 $query = mysqli_query($conn, $queryExecute);
 
 if($query) {
-    header('Location: index.php');
+    header('Location: index_users.php');
 } else {
     header('Location: 404.php');
 }

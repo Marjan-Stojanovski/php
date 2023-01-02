@@ -17,3 +17,15 @@ function insert($conn, $data, $table)
     $query = mysqli_query($conn, $queryInsert);
     return $query;
 }
+
+function view($conn, $table)
+{
+    $query = mysqli_query($conn, "SELECT * FROM $table");
+
+    $data = [];
+    while ($product = mysqli_fetch_assoc($query)) {
+        $data[] = $product;
+
+    };
+    return $data;
+}

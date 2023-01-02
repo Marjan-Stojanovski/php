@@ -45,7 +45,7 @@ $data = [
 $product = insert($conn, $data, 'users');
 
 if($product) {
-    header('Location: /index.php');
+    header('Location: /index_users.php');
 } else {
     header('Location: 404.php');
 }

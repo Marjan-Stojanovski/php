@@ -9,7 +9,7 @@ $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB);
 $query = mysqli_query($conn, "DELETE FROM users WHERE id='$id'");
 
 if($query) {
-    header('Location: /index.php');
+    header('Location: /index_users.php');
 } else {
     header('Location: /404.php');
 }

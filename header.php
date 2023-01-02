@@ -53,7 +53,7 @@
         <ul class="navbar-nav">
             <!-- MENI  -->
             <li class="nav-item">
-                <a class="nav-link text-white " href="/index.php">
+                <a class="nav-link text-white " href="/index_users.php">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
                     </div>
@@ -61,7 +61,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white " href="/products.php">
+                <a class="nav-link text-white " href="/index_product.php">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
                     </div>

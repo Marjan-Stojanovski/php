@@ -16,7 +16,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="createusers.php">
+            <form method="post" action="createproducts.php">
                 <div class="input-group input-group-outline my-4 focused is-focused">
                     <label class="form-label" for="product_name">Product Name</label>
                     <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="product_name">
@@ -30,8 +30,12 @@
                     <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="product_price">
                 </div>
                 <div class="input-group input-group-outline my-4 focused is-focused">
-                    <label class="form-label" for="customer_name">Customer Name</label>
-                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="customer_name">
+                    <label class="form-label" for="image">Image</label>
+                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="image">
+                </div>
+                <div class="input-group input-group-outline my-4 focused is-focused">
+                    <label class="form-label" for="user_id">User</label>
+                    <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="user_id">
                 </div>
                 <button type="submit" class="btn btn-primary green">Insert Product</button>
             </form>
