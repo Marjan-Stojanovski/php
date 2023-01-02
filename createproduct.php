@@ -11,12 +11,12 @@
             <h1>Create New Product</h1>
         </div>
         <div class="col-md-2">
-            <a href="listproducts.php" class="btn btn-primary">List Available Products</a>
+            <a href="/listproducts.php" class="btn btn-primary">List Available Products</a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="createproducts.php">
+            <form method="post" action="/createproducts.php">
                 <div class="input-group input-group-outline my-4 focused is-focused">
                     <label class="form-label" for="product_name">Product Name</label>
                     <input type="text" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" required name="product_name">

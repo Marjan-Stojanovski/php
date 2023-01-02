@@ -38,14 +38,14 @@ $data = view($conn, 'users');
 
                 foreach($data as $user) {
                     echo '<tr>
-                    <td><a href="/product.php?id='.$user['id'].'">'.$user['id'].'</a></td>
+                    <td><a href="/showuser.php?id='.$user['id'].'">'.$user['id'].'</a></td>
                     <td>'.$user['first_name'].'</td>
                     <td>'.$user['last_name'].'</td>
                     <td>'.$user['dob'].' den</td>
                     <td>'.$user['email'].'</td>
                     <td>
-                       <a href="/delete_user.php?id='.$user['id'].'" class="btn btn-danger">Delete Product</a>
-                       <a href="/modify.php?id='.$user['id'].'" class="btn btn-warning">Modify Product</a>
+                       <a href="/delete_user.php?id='.$user['id'].'" class="btn btn-danger">Delete User</a>
+                       <a href="/edituser.php?id='.$user['id'].'" class="btn btn-warning">Modify User</a>
                     </td>
                 </tr>';
                 };

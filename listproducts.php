@@ -16,7 +16,7 @@ $data = view($conn, 'products');
             <h1>Manage Products</h1>
         </div>
         <div class="col-md-2">
-            <a href="createproduct.php" class="btn btn-primary">Create/Modify Product</a>
+            <a href="/createproduct.php" class="btn btn-primary">Create/Modify Product</a>
         </div>
     </div>
     <br>
@@ -39,7 +39,7 @@ $data = view($conn, 'products');
 
                 foreach($data as $product) {
                     echo '<tr>
-                    <td><a href="/product.php?id='.$product['id'].'">'.$product['id'].'</a></td>
+                    <td><a href="/showproduct.php?id='.$product['id'].'">'.$product['id'].'</a></td>
                     <td>'.$product['product_name'].'</td>
                     <td>'.strip_tags(mb_strimwidth($product['product_desc'], 0, 25)).'</td>
                     <td>'.$product['product_price'].' den</td>
@@ -47,7 +47,7 @@ $data = view($conn, 'products');
                     <td>'.$product['user_id'].'</td>
                     <td>
                        <a href="/delete_product.php?id='.$product['id'].'" class="btn btn-danger">Delete Product</a>
-                       <a href="/modify.php?id='.$product['id'].'" class="btn btn-warning">Modify Product</a>
+                       <a href="/editproduct.php?id='.$product['id'].'" class="btn btn-warning">Modify Product</a>
                     </td>
                 </tr>';
                 };

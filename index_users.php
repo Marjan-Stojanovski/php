@@ -9,10 +9,10 @@ require_once "header.php";
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-2">
-            <a href="createuser.php" class="btn btn-primary">Create User</a>
+            <a href="/createuser.php" class="btn btn-primary">Create User</a>
         </div>
         <div class="col-md-2">
-            <a href="listusers.php" class="btn btn-primary">Manage Users</a>
+            <a href="/listusers.php" class="btn btn-primary">Manage Users</a>
         </div>
         <div class="col-md-4"></div>
     </div>

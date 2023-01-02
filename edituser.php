@@ -1,28 +1,26 @@
 <?php
 require_once "header.php";
+require_once "./process/functions.php";
 require_once "./config/db.php";
 
 
-$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB) or die("Connection error!");
-
 $id = $_GET['id'];
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB) or die('Connection error');
 
-$query = mysqli_query($conn, "SELECT * FROM users WHERE id='$id'");
-
-$user = mysqli_fetch_assoc($query);
+$user = showUnit($conn, $id, 'users');
 
 ?>
 
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <h1>Update form</h1>
+            <h1>Update User</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form action="/process/update.php" method="post">
+            <form action="/editusers.php" method="post">
 
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
 
