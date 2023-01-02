@@ -1,6 +1,6 @@
 <?php
-
 require_once "./config/db.php";
+
 
 function insert($conn, $data, $table)
 {
@@ -28,4 +28,10 @@ function view($conn, $table)
 
     };
     return $data;
+}
+
+function delete($conn, $id, $table)
+{
+    $query = mysqli_query($conn, "DELETE FROM $table WHERE id='$id'");
+    return $query;
 }

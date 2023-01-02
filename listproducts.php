@@ -46,7 +46,7 @@ $data = view($conn, 'products');
                     <td><img src="'.$product['image'].'" alt="" style="max-width: 100px"></td>
                     <td>'.$product['user_id'].'</td>
                     <td>
-                       <a href="/manage.php?id='.$product['id'].'" class="btn btn-danger">Delete Product</a>
+                       <a href="/delete_product.php?id='.$product['id'].'" class="btn btn-danger">Delete Product</a>
                        <a href="/modify.php?id='.$product['id'].'" class="btn btn-warning">Modify Product</a>
                     </td>
                 </tr>';

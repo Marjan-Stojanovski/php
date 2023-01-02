@@ -44,7 +44,7 @@ $data = view($conn, 'users');
                     <td>'.$user['dob'].' den</td>
                     <td>'.$user['email'].'</td>
                     <td>
-                       <a href="/manage.php?id='.$user['id'].'" class="btn btn-danger">Delete Product</a>
+                       <a href="/delete_user.php?id='.$user['id'].'" class="btn btn-danger">Delete Product</a>
                        <a href="/modify.php?id='.$user['id'].'" class="btn btn-warning">Modify Product</a>
                     </td>
                 </tr>';
