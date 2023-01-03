@@ -57,3 +57,15 @@ function edit($conn, $id, $data , $table)
     $query = mysqli_query($conn, "UPDATE $table SET $buildQuery WHERE id = '$id'");
     return $query;
 }
+
+function showUnitCrossed($conn, $id, $table)
+{
+    $query = mysqli_query($conn, "SELECT * FROM $table WHERE user_id = '$id'");
+
+    $data = [];
+    while ($product = mysqli_fetch_assoc($query)) {
+        $data[] = $product;
+    };
+
+    return $data;
+}
